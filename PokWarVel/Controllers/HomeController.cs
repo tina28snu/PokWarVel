@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MarvelApi;
+using MarvelApi.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +12,10 @@ namespace PokWarVel.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            MarvelRequester r = new MarvelRequester();
+            List<Characters> info = r.GetCharacters(limit: 100);
+
+            return View(info);
         }
 
         public ActionResult About()

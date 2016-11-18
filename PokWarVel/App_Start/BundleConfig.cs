@@ -24,8 +24,20 @@ namespace PokWarVel
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                        "~/Content/bootstrap.min.css",
+                        "~/Content/font-awesome.min.css",
+                        "~/Content/animate.min.css",
+                        "~/Content/lightbox.css",
+                        "~/Content/main.css",
+                        "~/Content/responsive.css",
+                        "~/Content/Site.css"));
+
+            bundles.Add(new ScriptBundle("~/JS/myscripts").Include(
+                        "~/JS/jquery.js",
+                        "~/JS/bootstrap.min.js",
+                        "~/JS/lightbox.min.js",
+                        "~/JS/wow.min.js",
+                        "~/JS/main.js"));
         }
     }
 }
