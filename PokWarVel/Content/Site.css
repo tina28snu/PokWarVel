@@ -64,5 +64,17 @@ textarea {
     display: none; 
 }
 
+.prevHero {
+    float: left;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.nextHero {
+    float: right;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
 
 

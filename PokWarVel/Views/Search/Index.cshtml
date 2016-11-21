@@ -32,9 +32,9 @@
                 {
                     Html.RenderPartial("~/Views/Shared/_Fiche.cshtml", item);
                 }
-             }
+            }
         </div>
-        <div class="prevHero"><a href="~/Home/Index?page=prev&nrPage=@ViewBag.prev"><strong><< Prev</strong></a></div><div class="nextHero"><a href="~/Home/Index?page=next&nrPage=@ViewBag.next"><strong>Next >></strong></a></div>
+        <div class="prevHero"><a href="~/Search/Index?pageS=prev&nrPageS=@ViewBag.prev"><strong><< Prev</strong></a></div> <div class="nextHero"><a href="~/Search/Index?pageS=next&nrPageS=@ViewBag.prev"><strong>Next >></strong></a></div>
     </div>
 </section>
 <!--/#services-->
